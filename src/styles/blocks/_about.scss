@@ -1,5 +1,5 @@
 .about {
-  padding: 140px 0;
+  padding: 225px 0 140px;
   background-color: rgba($color-light, .5);
 }
 
@@ -21,4 +21,30 @@
 .about-visual {
   flex-basis: 50%;
   padding: 0 $indent-gap-half;
+}
+
+.about-figure {
+  position: relative;
+  margin: 0;
+}
+
+.about-desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: rgba($color-dark, .5);
+  color: $color-light;
+}
+
+.play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
 }

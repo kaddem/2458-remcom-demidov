@@ -29,4 +29,25 @@
   line-height: 33px;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: $max-mobile) {
+    display: none;
+  }
+}
+
+.phone-mobile {
+  display: none;
+
+  @media (max-width: $max-mobile) {
+    display: inline-block;
+    margin-top: 30px;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $max-tablet) {
+    display: block;
+  }
 }

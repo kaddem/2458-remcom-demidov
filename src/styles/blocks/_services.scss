@@ -1,3 +1,8 @@
+.services {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
 .services-title {
   @include section-title;
 }
@@ -11,9 +16,42 @@
   flex-wrap: wrap;
   margin-left: -$indent-gap-half;
   margin-right: -$indent-gap-half;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
 }
 
 .services-item {
   flex-basis: 50%;
   padding: 0 $indent-gap-half;
+  color: $color-dark;
+
+  h3 {
+    font-family: $font-ral;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    @media (max-width: $max-tablet) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media (max-width: $max-mobile) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+
+    @media (max-width: $max-mobile) {
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
 }

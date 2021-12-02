@@ -1,13 +1,41 @@
 .main-nav {
+  @media (max-width: $max-tablet) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $color-dark;
+    border-top: 1px solid $color-light;
+  }
+
+  @media (max-width: $max-mobile) {
+    text-align: center;
+  }
+
   ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: $max-tablet) {
+      justify-content: center;
+    }
+
+    @media (max-width: $max-mobile) {
+      display: initial;
+    }
   }
 
   li {
     margin-left: 30px;
+
+    @media (max-width: $max-mobile) {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
 
     &:first-child {
       margin-left: 0;

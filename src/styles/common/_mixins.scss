@@ -6,10 +6,22 @@
   line-height: 68px;
   text-align: center;
   color: $color-accent;
+
+  @media (max-width: $max-tablet) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 @mixin container($width: 1278px) {
-  width: $width;
+  max-width: $width + $indent-gap;
   margin: 0 auto;
+  padding-left: $indent-gap-half;
+  padding-right: $indent-gap-half;
   border: 1px solid red;
 }

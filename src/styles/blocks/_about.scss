@@ -1,6 +1,15 @@
 .about {
   padding: 225px 0 140px;
   background-color: rgba($color-light, .5);
+
+  @media (max-width: $max-tablet) {
+    padding: 190px 0 90px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 110px 0 60px;
+    text-align: center;
+  }
 }
 
 .about-inner {
@@ -11,11 +20,52 @@
   display: flex;
   margin-left: -$indent-gap-half;
   margin-right: -$indent-gap-half;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
 }
 
 .about-content {
   flex-basis: 50%;
   padding: 0 $indent-gap-half;
+}
+
+.about-title {
+  margin: 0;
+  font-family: $font-ral;
+  font-weight: 300;
+  font-size: 116px;
+  line-height: 136px;
+  color: $color-accent;
+
+  @media (max-width: $max-tablet) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 54px;
+    line-height: 63px;
+  }
+}
+
+.about-text {
+  margin-bottom: 70px;
+  font-size: 32px;
+  line-height: 44px;
+  color: $color-accent;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .about-visual {

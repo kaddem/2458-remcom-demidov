@@ -34,13 +34,35 @@
   color: $color-accent;
 }
 
+.form-checkbox {
+  display: none;
+
+  &:checked + .form-checkbox-label:before {
+    background-color: $color-accent;
+  }
+}
+
 .form-checkbox-label {
+  display: flex;
   font-size: 20px;
   line-height: 27px;
   color: $color-dark;
 
   a {
     color: $color-accent;
+  }
+
+  &:before {
+    content: '';
+    flex-shrink: 0;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border: 2px solid $color-accent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
   }
 }
 

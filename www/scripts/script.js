@@ -1,52 +1,28 @@
-let actor;
+$(document).ready(function () {
 
-console.log(actor);
+  let servicesItems = $('.services-title').text();
 
-actor = 'Майкл Киттон';
+  console.log(servicesItems);
 
-console.log(actor);
+  let linkText = $('.main-nav a').text();
 
-actor = 34;
+  console.log(linkText);
 
-console.log(actor);
+  $('.services-title').hide();
 
-const Pi = 3.14;
-
-console.log(Pi);
-
-let petArray = [];
-
-console.log(petArray.length);
+  $('.main-nav a').css({
+    'color': 'red',
+    'font-size': '30px'
+  });
 
 
-let a = 10;
+  function summ(a, b) {
+    console.log(a + b);
+    return a + b;
+    console.log('some');
+  }
 
-a = a + 1;
+  let firstSumm = summ(2, 4);
+  console.log(firstSumm);
 
-console.log(a);
-
-a++;
-
-console.log(a);
-
-a = a - 1;
-
-console.log(a);
-
-a--;
-
-console.log(a);
-
-console.log(2 !== '2');
-
-
-let nameMember = ' ';
-
-console.log(nameMember);
-
-if (petArray.length) {
-  console.log('В массиве есть элементы');
-} else {
-  console.log('Массив пуст');
-}
-
+});

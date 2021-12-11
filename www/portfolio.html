@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RemCom - Портфолио</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="logo">RemCom</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="portfolio.html">Наши работы</a></li>
+          </ul>
+          <a href="tel:+78128888888" class="phone-mobile">+7 812 888-88-88</a>
+        </nav>
+        <a href="tel:+78128888888" class="phone">+7 812 888-88-88</a>
+        <button class="burger">menu</button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="portfolio">
+      <div class="portfolio-inner">
+        <h1 class="portfolio-title">Наши работы</h1>
+
+        <ul class="filter">
+          <li class="filter-item">
+            <a href="#" class="filter-link active" data-filter="all">Все работы</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-filter="electro">Электроника</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-filter="furniture">Мебель</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link" data-filter="socks">Одежда</a>
+          </li>
+        </ul>
+
+        <ul class="portfolio-list">
+          <li class="portfolio-item" data-type="electro">
+            <div class="portfolio-card">
+              Электро-веник
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="furniture">
+            <div class="portfolio-card">
+              Тумбочка
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="furniture">
+            <div class="portfolio-card">
+              Деревянная рубашка
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="electro">
+            <div class="portfolio-card">
+              Светящийся шкаф
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="socks">
+            <div class="portfolio-card">
+              Футболка с лампочками
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="socks">
+            <div class="portfolio-card">
+              Кастрюля из войлока
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="socks">
+            <div class="portfolio-card">
+              Медное сито
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="furniture">
+            <div class="portfolio-card">
+              Кровать
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="socks">
+            <div class="portfolio-card">
+              Носки
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="electro">
+            <div class="portfolio-card">
+              Глупая колонка Маруся
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="electro">
+            <div class="portfolio-card">
+              Умная типа Алиса
+            </div>
+          </li>
+          <li class="portfolio-item" data-type="furniture">
+            <div class="portfolio-card">
+              Софа
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="order-inner">
+        <h2 class="order-title">Заявка на ремонт</h2>
+        <form action="#" class="form">
+          <div class="form-field form-field-half">
+            <label for="name" class="form-label">Имя</label>
+            <input id="name" type="text" class="form-input" placeholder="d;sljkvabakdsf">
+          </div>
+          <div class="form-field form-field-half">
+            <label for="phone" class="form-label">Телефон</label>
+            <input id="phone" type="text" class="form-input">
+          </div>
+          <div class="form-field">
+            <label for="message" class="form-label">Что ремонтируем?</label>
+            <textarea name="" id="message" class="form-textarea"></textarea>
+          </div>
+          <div class="form-field">
+            <input id="confirm" type="checkbox" class="form-checkbox">
+            <label for="confirm" class="form-checkbox-label">
+              <span>
+                Даю согласие на обработку персональных данных с соответствии с
+                <a href="#">политикой обработки персональных данных</a>
+              </span>
+            </label>
+          </div>
+          <div class="form-field">
+            <button type="submit" class="btn btn-form">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer" id="about">
+    <div class="footer-inner">
+      <p class="copyright">Ничего не защищено О_о :Р</p>
+    </div>
+  </footer>
+
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

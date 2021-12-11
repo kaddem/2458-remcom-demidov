@@ -1,4 +1,8 @@
 .main-nav {
+  @media (min-width: $desktop) {
+    display: block !important;
+  }
+
   @media (max-width: $max-tablet) {
     position: absolute;
     top: 100%;

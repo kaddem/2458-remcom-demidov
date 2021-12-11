@@ -1,28 +1,62 @@
 $(document).ready(function () {
 
-  let servicesItems = $('.services-title').text();
+  let isMenuOpen = false;
 
-  console.log(servicesItems);
+  // $('.burger').on('click', function () {
 
-  let linkText = $('.main-nav a').text();
+  //   if (isMenuOpen) {
+  //     $('.main-nav').slideUp();
 
-  console.log(linkText);
+  //     // $('.main-nav').removeAttr('style');
+  //     isMenuOpen = false;
+  //     return;
+  //   }
 
-  $('.services-title').hide();
+  //   $('.main-nav').slideDown();
+  //   isMenuOpen = open;
 
-  $('.main-nav a').css({
-    'color': 'red',
-    'font-size': '30px'
+  // });
+
+  // Открытие.закрытие мобильного меню
+  $('.burger').on('click', function () {
+    $('.main-nav').slideToggle();
   });
 
 
-  function summ(a, b) {
-    console.log(a + b);
-    return a + b;
-    console.log('some');
-  }
+  // Табы на странице контактов
+  $('.tabs-link').on('click', function (e) {
+    e.preventDefault();
+    const activeClass = 'active';
+    let index = $(this).index('.tabs-link');
 
-  let firstSumm = summ(2, 4);
-  console.log(firstSumm);
+    $('.tabs-link').removeClass(activeClass);
+    $(this).addClass(activeClass);
+
+    $('.contacts-content').removeClass(activeClass);
+    $('.contacts-content').eq(index).addClass(activeClass);
+  });
+
+  // Фильтрация в портфолио
+
+  $('.filter-link').on('click', function (e) {
+    e.preventDefault();
+    let dataFilter = $(this).data('filter');
+
+    $('.filter-link').removeClass('active');
+    $(this).addClass('active');
+
+
+    $('.portfolio-item').each(function () {
+      let dataType = $(this).data('type');
+
+      if (dataFilter === dataType) {
+        $(this).show();
+        return;
+      }
+
+      $(this).hide();
+    });
+
+  });
 
 });

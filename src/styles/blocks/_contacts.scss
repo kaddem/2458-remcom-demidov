@@ -1,0 +1,21 @@
+.contacts {
+  padding-top: 240px;
+  padding-bottom: 130px;
+  background-color: rgba($color-light, 0.2);
+}
+
+.contacts-inner {
+  @include container;
+}
+
+.contacts-title {
+  @include section-title;
+}
+
+.contacts-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

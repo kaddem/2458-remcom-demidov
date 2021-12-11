@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RemCom - главная страница</title>
+  <title>RemCom - контакты</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -30,57 +30,46 @@
   </header>
 
   <main>
-    <section class="about">
-      <div class="about-inner">
-        <div class="about-wrap">
-          <div class="about-content">
-            <h1 class="about-title">RemCom</h1>
-            <p class="about-text">Ремонт мелкой и крупной бытовой техники в Санкт-Петербурге</p>
-            <a href="#order" class="btn btn-tablet">Оставить заявку</a>
-          </div>
-          <div class="about-visual">
-            <figure class="about-figure">
-              <img src="images/about-pic.jpg" alt="Товарищи ремонтники увлеченно выполняют план пятилетки"
-                class="about-img">
-              <figcaption class="about-desc">Наши мастрера мастерят</figcaption>
-              <button class="play">play</button>
-            </figure>
 
-            <a href="#order" class="btn btn-mobile">Оставить заявку</a>
+    <section class="contacts">
+      <div class="contacts-inner">
+        <h1 class="contacts-title">Сервисные центры</h1>
 
-          </div>
+        <ul class="tabs">
+          <li class="tabs-item">
+            <a href="#" class="tabs-link active">Санкт-Петербург</a>
+          </li>
+          <li class="tabs-item">
+            <a href="#" class="tabs-link">Москва</a>
+          </li>
+          <li class="tabs-item">
+            <a href="#" class="tabs-link">Екатеринбург</a>
+          </li>
+        </ul>
+
+        <div class="contacts-content active">
+          <ul class="contacts-list">
+            <li class="contacts-item">Спасский переулок, д. 14</li>
+            <li class="contacts-item">тел: 8800</li>
+            <li class="contacts-item">24 часа</li>
+          </ul>
         </div>
 
-      </div>
-    </section>
-
-    <section class="services">
-      <div class="services-inner">
-        <h2 class="services-title">Что мы ремонтируем</h2>
-
-        <div class="services-list some-class">
-          <div class="services-item">
-            <i class="service-icon"></i>
-            <h3>Кухонную технику</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-          <div class="services-item">
-            <i class="service-icon"></i>
-            <h3>Смартфоны</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-          <div class="services-item">
-            <i class="service-icon"></i>
-            <h3>Теле и аудио</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-          <div class="services-item">
-            <i class="service-icon"></i>
-            <h3>Деревянную мебель</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
+        <div class="contacts-content">
+          <ul class="contacts-list">
+            <li class="contacts-item">Крнасная площадь, кремль</li>
+            <li class="contacts-item">тел: 8800</li>
+            <li class="contacts-item">24 часа</li>
+          </ul>
         </div>
 
+        <div class="contacts-content">
+          <ul class="contacts-list">
+            <li class="contacts-item">Проспект Ленина, д.1</li>
+            <li class="contacts-item">тел: 8800</li>
+            <li class="contacts-item">24 часа</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -118,7 +107,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="about">
     <div class="footer-inner">
       <p class="copyright">Ничего не защищено О_о :Р</p>
     </div>

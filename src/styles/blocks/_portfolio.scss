@@ -1,0 +1,32 @@
+.portfolio {
+  padding-top: 240px;
+  padding-bottom: 130px;
+  background-color: rgba($color-light, 0.2);
+}
+
+.portfolio-inner {
+  @include container;
+}
+
+.portfolio-title {
+  @include section-title;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.portfolio-item {
+  width: 25%;
+  padding: $indent-gap-half;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba($color-accent, 0.1);
+  border-radius: 5px;
+}

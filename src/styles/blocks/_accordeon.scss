@@ -1,0 +1,25 @@
+.accordeon {
+  margin-top: 40px;
+  box-shadow: 0 0 8px rgba($color-accent, .2);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.accordeon-question {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-family: $font-ral;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.accordeon-answear {
+  display: none;
+  padding: 0 30px 30px;
+}

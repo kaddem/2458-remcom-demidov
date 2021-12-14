@@ -1,13 +1,12 @@
-.order {
+.gallery {
   padding-top: 100px;
   padding-bottom: 90px;
-  background-color: rgba($color-light, .2);
 }
 
-.order-inner {
+.gallery-inner {
   @include container;
 }
 
-.order-title {
+.gallery-title {
   @include section-title;
 }

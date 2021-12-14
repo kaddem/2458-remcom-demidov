@@ -45,6 +45,10 @@ $(document).ready(function () {
     $('.filter-link').removeClass('active');
     $(this).addClass('active');
 
+    if (dataFilter === 'all') {
+      $('.portfolio-item').show();
+      return;
+    }
 
     $('.portfolio-item').each(function () {
       let dataType = $(this).data('type');
@@ -58,5 +62,29 @@ $(document).ready(function () {
     });
 
   });
+
+
+  let prevIndex;
+  $('.accordeon-question').on('click', function () {
+    const currentIndex = $(this).index('.accordeon-question');
+
+    if (prevIndex === currentIndex) {
+      $(this).next().slideToggle();
+      return;
+    }
+
+    $('.accordeon-answear').slideUp();
+    $(this).next().slideDown();
+
+    prevIndex = currentIndex;
+  });
+
+
+  // Галерея
+  if ($('.slider').length) {
+    $('.slider').slick({
+      dots: true
+    });
+  }
 
 });

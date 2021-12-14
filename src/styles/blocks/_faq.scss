@@ -1,0 +1,14 @@
+.faq {
+  padding-top: 240px;
+  padding-bottom: 130px;
+  background-color: rgba($color-light, .2);
+}
+
+.faq-inner {
+  @include container;
+}
+
+.faq-title {
+  @include section-title;
+  margin-bottom: 100px;
+}

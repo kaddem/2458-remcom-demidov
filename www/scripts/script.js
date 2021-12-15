@@ -87,4 +87,47 @@ $(document).ready(function () {
     });
   }
 
+  $('.j-review-btn').on('click', function () {
+
+    $.ajax({
+      type: 'POST',
+      url: '../json/reviews.json',
+      data: 'count=2',
+      success: function (response) {
+        createHtml(response.reviews);
+      },
+      error: function () {
+        console.log('error');
+      }
+    });
+
+  });
+
+  function createHtml(reviewsArray) {
+    let newHtml = '';
+
+    for (let i = 0; i < reviewsArray.length; i++) {
+      newHtml = newHtml + `
+      <div class="reviews-item">
+        <div class="review">
+          <div class="review-ava-wrap">
+            <img src="${reviewsArray[i].avaUrl}" alt="${reviewsArray[i].avaAlt}" class="review-ava">
+          </div>
+          <div class="review-content">
+            <span class="review-name">${reviewsArray[i].name}</span>
+            <blockquote class="review-quote">
+              “${reviewsArray[i].text}”
+            </blockquote>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    addToPage(newHtml);
+  }
+
+  function addToPage(htmlString) {
+    $('.reviews-list').append(htmlString);
+  }
+
 });
